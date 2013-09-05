@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #fff;
+	background-image: url(images/skybckgrd_tile.jpg);
+	background-repeat: repeat;
+	color: #333333;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 62.5%;
+	line-height: 1.75em;
+	position: relative;
+}
+
+p {
+	color: #333333;
+	font-size: 2.6em;
+	line-height: 1.4em;
+}
+.small-p {
+    color: #333333;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin-top: -16px !important;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans',sans-serif;
+}
+h1 {
+	color: #000000;
+	font-size: 4.6em;
+	font-weight: lighter;
+	line-height: .5em;
+	padding-bottom: 0;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+.h1-sub {
+	color: #EC0A8A;
+	font-size: .75em;
+	font-variant: normal;
+	font-weight: lighter;
+	line-height: 32px;
+	padding-left: 0;
+	text-transform: uppercase;
+	padding-top:25px;
+}
+
+.h1Sub{
+	margin-top:-5px;
+	color: #EC0A8A;
+}
+
+h2 {
+	color: #000000;
+	font-size: 2.8em;
+	font-variant: normal;
+	font-weight: lighter;
+	line-height: .5em;
+	text-transform: uppercase;
+}
+h2 span {
+    color: #666666;
+    font-size: 18px;
+    font-variant: normal;
+    font-weight: lighter;
+    line-height: 14px;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+h3 {
+	color: #000000;
+	font-size: 2.1em;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
+h4 {
+    color: #666666;
+    font-size: 1.9em;
+    font-variant: normal;
+    font-weight: lighter;
+    line-height: 1.2em;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+h5 {
+    color: #000000;
+    font-size: 1.6em;
+    font-variant: normal;
+    font-weight: lighter;
+    line-height: 1em;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+
+.negSpace {
+	margin-top:-20px;
+}
+
+a {
+    color: #EC0A8A;
+    text-decoration: none;
+}
+a:visited {
+}
+a:hover {
+    color: ##EC0A8A;
+	text-decoration: underline;
+}
+a:focus {
+    outline: medium none;
+}
+a:hover, a:active {
+    outline: 0 none;
+}
+
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width:980px;
+	overflow: hidden;
+}
+
+td {
+	color: #333333;
+	font-size: 2em;
+	line-height: 1.7em;
+}
+
+
+.fade-in {
+    animation: 1s ease-in 0s normal forwards 1 fadeIn;
+    opacity: 0;
+}
+
+#header {
+	padding-bottom:50px;
+	padding-top:75px;
+}
+
+.sand {
+	position:absolute;
+	left: 0px;
+	bottom: 44px;
+}
+
+#sandbar {
+	height:207px;
+	background-image: url(images/sand_bckgrd.png);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+.tree {
+	position:absolute;
+	right: 155px;
+	bottom: 44px;
+}
+
+.amrFooter {
+	background-color:#404041;
+	height:44px;
+}
+
+#form {
+	margin-bottom:-75px;
+}
+
+/* CLOUDS */
+.c1l {
+	position:absolute;
+	left: 3px;
+	top: -5px;
+}
+.c1r {
+	position:absolute;
+	right: -55px;
+	top: 550px;
+}
+
+.c2l {
+	position:absolute;
+	left: 3px;
+	top: 750px;
+}
+.c2r {
+	position:absolute;
+	right: 5px;
+	top: 1100px;
+}
+
+.c3l {
+	position:absolute;
+	left: 3px;
+	top: 1500px;
+}
+.c3r {
+	position:absolute;
+	right: 5px;
+	top: 1800px;
+}
+
+.c4l {
+	position:absolute;
+	left: 3px;
+	top: 2200px;
+}
+.c4r {
+	position:absolute;
+	right: 5px;
+	top: 2400px;
+}
+
+.c5l {
+	position:absolute;
+	left: 25px;
+	top: 2600px;
+}
+.c5r {
+	position:absolute;
+	right: 25px;
+	top: 3000px;
+}
+
+.c6l {
+	position:absolute;
+	left: 75px;
+	top: 2700px;
+}
+
+.c6r {
+	position:absolute;
+	right: 5px;
+	top: 2500px;
+}
+
+.c7l {
+	position:absolute;
+	left: 25px;
+	top: 3400px;
+}
+.c7r {
+	position:absolute;
+	right: 25px;
+	top: 3200px;
+}
+
+.c8l {
+	position:absolute;
+	left: 25px;
+	top: 4100px;
+}
+.c8r {
+	position:absolute;
+	right: 25px;
+	top: 3900px;
+}
+
+input[type=submit] {
+width: 185px;
+height: 45px;
+padding: 10px 15px;
+margin: 0 15px 0 0;
+-moz-box-shadow: 0px 0px 5px #999;
+-webkit-box-shadow: 0px 0px 5px #999;
+border: 1px solid #556f8c;
+background: -moz-linear-gradient(top, #EC0A8A 0%, #EC0A8A 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EC0A8A), color-stop(100%,#EC0A8A));
+cursor: pointer;
+font-size: .75em;
+color:#FFFFFF;
+}
+
+.fade {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }

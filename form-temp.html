@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+
+<script language="javascript1.2">
+function CHKFORM(theForm){ 
+  
+     if (theForm.first_name.value == "")
+  {
+    alert("Please enter your first name!");
+    theForm.first_name.focus();
+    return (false);
+  }  
+  
+  if (theForm.last_name.value == "")
+  {
+    alert("Please enter your last name!");
+    theForm.last_name.focus();
+    return (false);
+  }    
+  
+   if (theForm.email.value == "")
+    {
+    alert("Please enter your E-Mail!");
+    theForm.email.focus();
+    return (false);
+  }
+    if (theForm.email.value.indexOf("@") == -1 || theForm.email.value.indexOf(".") == -1){
+	alert("Please enter a valid email address")
+	theForm.email.focus();
+    return (false);
+   }
+  
+   if (theForm.phone.value == "")
+  {
+    alert("Please enter your phone number!");
+    theForm.phone.focus();
+    return (false);
+  }	
+
+ else{
+ document.form1.action = "email.asp"
+ return true;
+ }
+
+}
+
+</script>
+
+</head>
+
+<body>
+<form name="form1" method="post" action="" onSubmit="return CHKFORM(this)">
+      <table border="0" cellpadding="4" align="center">
+        <tr>
+          <td>First Name</td>
+          <td colspan="2"><input name="first_name" type="text" class="body" id="first_name" size="61" /></td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td colspan="2"><input name="last_name" type="text" class="body" id="last_name" value="" size="61" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td colspan="2"><input name="email" type="text" class="body" id="email" size="61" /></td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td colspan="2"><input name="phone" type="text" class="body" size="61" /></td>
+        </tr>
+        <tr>
+          <td>Attending</td>
+          <td align="left"><label>
+            <input type="radio" name="attending" id="attending3" value="yes" class="input.styled" checked="checked" />
+</label>
+Yes
+          </td>
+          <td align="left"><label>
+<input type="radio" name="attending" id="attending" value="no" class="input.styled" />
+</label>
+No</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="2" align="left"><label>
+            <input name="Submit" type="submit" value="Submit" />
+          </label></td>
+        </tr>
+      </table>
+</form>
+
+</body>
+</html>
